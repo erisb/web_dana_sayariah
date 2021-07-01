@@ -1,0 +1,366 @@
+@extends('layouts.guest.master')
+
+@section('navbar')
+@include('includes.navbar')
+@endsection
+
+@section('body')
+<style>
+
+/*
+    .counter-box i{
+      color: #0faf3f !important;
+    }
+    .counter-box h1, .counter-box h5 {
+      color: #0faf3f !important;
+    } */
+
+    .table td
+    {
+        padding: 0.3em;
+        padding-right: .8em;
+        padding-bottom: .6em;
+    }
+    .lead
+    {
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+    .notify-badge{
+
+        z-index: 900;
+        width: 20% !important;
+
+    }
+    .flaticon{
+        color: gold;
+    }
+    .bg-css{
+        background: #0e6003;
+        color: white;
+    }
+</style>
+<div class="banner" id="banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img\carousel\2200x1200_01.jpg" alt="banner-1">
+                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+                    <div class="carousel-content container">
+                        <div class="text-center">
+                            <h3 data-animation="animated fadeInDown delay-05s" <br/>Penggalangan Dana yang<br> Sedang Berlangsung</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<br>
+<hr>
+    <div class="row">
+        <div class="col-12 text-center wow fadeInUp delay-04s">
+            <button data-toggle="modal" data-target="#investorModal" class="btn btn-lg btn-round btn-theme">PENDANA</button>
+            <button data-toggle="modal" data-target="#pengusahaModal" class="btn btn-lg btn-round btn-theme">PENERIMA DANA</button>
+        </div>
+    </div>
+</div>
+
+                    <!-- start modal for investor -->
+                        <div id="investorModal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <!-- Modal content-->
+                                            <div class="modal-content">
+                                            
+                                                <div class="modal-body">
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-6">
+                                                            <img class="col-12" src="/img/danasyariahlogo.png" style="margin: 5px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center" style="background: #0faf3f;margin: 0px;">
+                                                    <h3 style="color: white;">INVESTASI</h4>            
+                                                </div>
+                                                <hr>
+                                                    <div class="tabbing tabbing-box mb-60">
+                                                        <ul class="nav nav-tabs col-12 justify-content-server text-center" id="carTab" role="tablist">
+                                                            <li class="nav-item col-4">
+                                                                <a class="nav-link active show" id="one-tab" data-toggle="tab" href="#one2" role="tab" aria-controls="one" aria-selected="false">Tahapan Memberikan Pendanaan Di Danasyariah</a>
+                                                            </li>
+                                                            <li class="nav-item col-4">
+                                                                <a class="nav-link" id="two-tab" data-toggle="tab" href="#two2" role="tab" aria-controls="two" aria-selected="false">Beberapa Kelebihan Investasi Pendanaan melalui Dana Syariah.</a>
+                                                            </li>
+                                                            <li class="nav-item col-4">
+                                                                <a class="nav-link" id="three-tab" data-toggle="tab" href="#three3" role="tab" aria-controls="three" aria-selected="false">Resiko Pemberian Pendanaan Di Danasyariah</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content" id="carTabContent">
+                                                            <div class="tab-pane fade active show" id="one2" role="tabpanel" aria-labelledby="one-tab">
+                                                                <ol>
+                                                                    <li style="color: green;">Daftar Menjadi Anggota Danasyariah </li>
+                                                                    <p>Proses pendaftaran mudah. Syaratnya, memiliki KTP atau Pasport, dan berusia lebih dari 17 tahun. Setelah anda mendaftar anda dapat mengakses situs Danasyariah secara penuh, termasuk melihat penggalangan dana yang sedang berlangsung.</p>
+                                                                    <li style="color: green;">Pilih Pendanaan Yang Anda Pandang Berpotensi Baik</li>
+                                                                    <p>Anda dapat melihat setiap penggalangan dana berbasis pendanaan yang sedang berlangsung dan melihat informasi mengenai rating, bagi hasil, tenor, dan profil usaha calon penerima pendanaan terkait. Pilih pendanaan yang anda pandang cocok untuk anda berdasarkan informasi yang telah anda pelajari.</p>
+                                                                    <li style="color: green;">Lakukan Pendanaan Pada Pendanaan Yang Anda Pilih</li>
+                                                                    <p>Anda dapat melakukan pendanaan pada pendanaan yang anda pilih melalui halaman kampanye penggalangan dana terkait. Pastikan anda telah melakukan deposit terlebih dahulu pada akun investasi anda. Deposit dapat dilakukan dengan mengklik tab deposit di pojok kanan atas, atau dengan mengakses halaman akun investasi pada dasbor anggota di pojok kanan atas.</p>
+                                                                    <li style="color: green;">Tunggu Proses Penggalangan Pendanaan Selesai</li>
+                                                                    <p>Penggalangan dana berbasis pendanaan berlangsung selama 30 - 40 hari. Apabila jumlah dana yang terkumpul kurang dari 80% dari jumlah yang ditargetkan sampai dengan akhir periode tersebut, maka penggalangan dana tersebut dianggap tidak berhasil dan dana yang anda investasikan akan dikembalikan ke akun investasi anda. Apabila jumlah dana yang terkumpul mencapai jumlah yang ditargetkan sebelum akhir dari periode tersebut, maka penggalangan dana berhasil.</p>
+                                                                    <li style="color: green;">Investasi Selesai</li>
+                                                                    <p>Setelah dokumentasi legal selesai dilakukan, kami akan mengirimkan dana pendanaan kepada penggalang dana. Anda dapat mengakses pendanaan anda dan mempelajari progress dan informasi terkait melalui bagian portofolio di dasbor anggota di pojok kanan atas.</p>
+                                                                </ol>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="two2" role="tabpanel" aria-labelledby="two-tab">
+                                                                <ol>
+                                                                    <li style="color: green;">Semua Proses Dijaga agar Sesuai Ajaran Syariah Islam </li>
+                                                                    <p>Bahwa dalam upaya mencari rezeki, kita diperbolehkan untuk mencari keuntungan sebesar besarnya, namun yang jauh lebih penting dari itu adalah proses mendapatkannya harus sesuai dengan kaidah ajaran Islam. Untuk menjaga agar semua prosesnya bisa sesuai dengan syariah Islam, Tim Danasyariah berkonsultasi dengan para guru yang telah di percaya memiliki pengetahuan yang luas dan mendalam tentang kaidah ajaran Islam yang berkaitan dengan bidang Muammalah. Dengan demikian Insya Allah seluruh proses kerja sama yang terjadi melalui Dana Syariah ini bisa terjaga agar selalu sesuai dengan Syariah Islam.</p>
+                                                                    <li style="color: green;">Insya Allah Mendapatkan Bagi Hasil yang Halal dan Barokah</li>
+                                                                    <p>Harta atau rezeki yang di peroleh dari proses yang sesuai Syariah Islam, Insya Allah akan menghasilkan harta yang Halal dan Barokah. Pada hakekatnya ukuran besar kecilnya harta bukan hanya di lihat dari nilai nominalnya, tapi yang lebih penting dari itu adalah Daya Manfaatnya bagi masyarakat dan lingkungan atau dengan kata lain Keberkahannya. <br> Melalui fitur Dana Syariah, anda dapat memberikan pendanaan usaha dengan sistim Bagi Hasil yang adil dan jujur sesuai dengan ajaran Islam, sehingga hasilnya Insya Allah adalah rezeki yang Halal dan Barokah.</p>
+                                                                    <li style="color: green;">Kemudahan dan Kecepatan dalam  proses</li>
+                                                                    <p>Tim Dana Syariah akan menangani seluruh proses, dari mulai proses administrasi perdaftaran, dokumentasi hukum dan akad syariah, sampai monitoring pembayaran dan penyelesaian transaksi, sehingga anda tidak perlu direpotkan dengan hal-hal tersebut. Anda dapat melihat perkembangan penggunaan dana.</p>
+                                                                    <li style="color: green;">Perlindungan untuk Pemberi Pendanaan </li>
+                                                                    <p>Dana syariah memiliki tim yang berpengalaman dalam dunia investasi dan pembiayaan. Sehingga setiap pengajuan pendanaan yang masuk, akan selalu Kami analisa kelayakannya secara hati hati sebelum kami tawarkan kepada pemilik dana. <br> Dana Investasi hasil penggalangan, akan kami setorkan kepada penerima dana setelah penerima dana menandatangani dokumen-dokumen akad syariah yang ditujukan untuk melindungi kedua pihak, diantaranya adalah akad Musyarakah dan akad Mudharabah.</p>
+                                                                    <li style="color: green;">Biaya atau Ijaroh yang Sangat Rendah</li>
+                                                                    <p>Sebagai pemberi pendanaan, anda dikenakan biaya atau Ijaroh yang sangat ringan dari setiap pembayaran kembali  yang anda terima. Berkisar antara 0,5 - 1 persen dari setiap pengembalian dana yang masuk dari pembayaran kembali dana investasi dan bagi hasilnya.</p>
+                                                                </ol>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="three3" role="tabpanel" aria-labelledby="three-tab">
+                                                                <ol>
+                                                                    <li style="color: green;">Resiko Kredit / Gagal Bayar / Bagi Hasil Rendah</li>
+                                                                    <p>Resiko utama dalam memberikan pendanaan adalah resiko kegagalan pembayaran oleh penerima pendanaan, baik karena kegagalan usahanya maupun karena alasan lainnya. Untuk memitigasi resiko ini, Danasyariah melakukan analisa kelayakan dan resiko pendanaan yang konservatif, untuk meminimalisir resiko gagal bayar oleh penerima pendanaan. Untuk lebih memitigasi resiko ini, kami sarankan anda untuk melakukan diversifikasi pemberian pendanaan ke beberapa proyek pendanaan yang berbeda. <br> Sesuai dengan kaidah kerja sama secara Syariah di mana akad bagi hasilnya adalah profit and loss sharing, maka ada kemungkinan juga terjadi realisasi usaha yang profitnya lebih rendah dari perkiraan bahkan mungkin bisa juga terjadi rugi. Artinya ada kemungkinan Pemberi Dana tidak mendapatkan keuntungan dari dana yang di kerja samakan di proyek tertentu, dan bahkan dana modal awalnya pun bisa berkurang sesuai porsi bagi hasil dan tingkat kerugian dari usaha yang di danai.</p>
+                                                                    <li style="color: green;">Resiko Likuiditas Agunan</li>
+                                                                    <p>Sekalipun suatu pendanaan dijamin dengan agunan, terdapat resiko sulitnya menjual agunan tersebut, atau resiko jatuhnya nilai agunan, sehingga tidak cukup untuk melunasi pendanaan yang gagal bayar. Untuk memitigasi hal ini, dalam melakukan analisa kelayakan dan resiko pendanaan, Danasyariah memberikan penekanan pada arus kas penerima pendanaan dan bukan hanya pada ada atau tidaknya agunan serta kualitas dari agunan. Danasyariah juga memberikan discount yang substansial atas nilai pasar agunan yang kami pandang tidak liquid. Untuk lebih memitigasi resiko ini, kami sarankan anda untuk melakukan diversifikasi pemberian pendanaan.</p>
+                                                                    <li style="color: green;">Resiko Proses Hukum</li>
+                                                                    <p>Apabila terjadi perselisihan hukum dengan penerima pendanaan, maka proses penyelesaiannya akan dilakukan melalui proses peradilan. Proses peradilan di Indonesia tidak sepenuhnya dapat diandalkan dan sering kali hasilnya tidak bisa diprediksi, serta memakan waktu yang panjang. Untuk memitigasi hal ini Danasyariah akan menempuh jalur hukum yang paling efektif dengan dibantu oleh konsultan hukum syariah berpengalaman dalam menghadapi setiap perselisihan hukum dengan penerima pendanaan. Untuk lebih memitigasi resiko ini, kami sarankan anda untuk melakukan diversifikasi pemberian pendanaan.</p>
+                                                                    <li style="color: green">Resiko force majour </li>
+                                                                    <p>Resiko yang diluar kendali kita semua, misalnya Bencana Alam, Kebakaran, Kerusuhan dan hal-hal lain diluar kendali Dana Syariah.</p>
+                                                                </ol>                                
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    <!-- end of modal for investor -->
+
+
+                    <!-- start of modal penerima pendanaan -->
+                    <div id="pengusahaModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                            
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-6">
+                                            <img class="col-12" src="/img/danasyariahlogo.png" style="margin: 5px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center" style="background: #0faf3f;margin: 0px;">
+                                    <h3 style="color: white;">PEMINJAM</h4>
+                                </div>
+                                <hr>
+                                <div class="tab-content" id="carTabContent">
+                                <div style="padding:20px">
+                                    <h4>Tahapan Untuk Mengajukan Pendanaan di Danasyariah</h4>
+                                    <hr>
+                                    <ol>
+                                        <li style="color:green">Daftar Menjadi Anggota Danasyariah</li>
+                                        <p>Proses pendaftaran mudah. Syaratnya anda harus berkewarganegaraan Indonesia, memiliki KTP, dan berusia lebih dari 17 tahun. Cukup isi email dan password akun anda, atau gunakan akun social media anda, anda akan langsung terdaftar menjadi anggota Danasyariah. Setelah anda mendaftar, anda perlu melengkapi identitas, mengupload KTP, serta mengisi detail nomor rekening anda sebelum anda dapat mengakses situs Danasyariah secara penuh, termasuk untuk mengajukan pendanaan. Setelah prosesnya lengkap, akun anda akan kami verifikasi dalam waktu tidak lebih dari 1x24 jam.</p>
+                                        <li style="color:green">Masuk Ke Halaman Galang Dana dan Ajukan Pendanaan</li>
+                                        <p>Masuk ke halaman galang dana dan pilih penggalangan dana . Di halaman ini anda dapat mulai mempersiapkan pengajuan pendanaan anda dengan memasukkan informasi dan dokumen yang diperlukan. Anda dapat menyimpan materi pengajuan pendanaan anda dari waktu ke waktu dan melanjutkannya kemudian. Apabila anda sudah merasa puas dengan materi yang anda masukkan, anda dapat mendaftarkan pengajuan pendanaan anda kepada kami.</p>
+                                        <li style="color:green">Proses Verifikasi Pengajuan Pendanaan</li>
+                                        <p>Kami akan melakukan verifikasi atas materi yang anda sampaikan untuk mempertimbangkan kelayakan usaha anda, rating pendanaan anda, serta tingkat bagi hasil pendanaan anda. <br> Apabila usaha anda kami pandang layak, maka selanjutnya anda harus menentukan apakah anda menyetujui ketentuan pendanaan, termasuk tingkat bagi hasil yang kami tawarkan. <br> Apabila anda menyetujuinya, maka kami akan memulai penggalangan dana pendanaan anda kepada para Pendana.</p>
+                                        <li style="color:green">Penggalangan Dana Dimulai</li>
+                                        <p>Penggalangan dana untuk membiayai pendanaan anda akan dilangsungkan selama maksimal 40 hari. Penggalangan dana berhasil apabila dana yang berhasil digalang mencapai paling tidak 80% dari jumlah pendanaan yang anda cari. Apabila tidak mencapai jumlah tersebut, maka penggalangan dana anda belum berhasil dan dana para pendana akan dikembalikan ke masing-masing pendana.</p>
+                                        <li style="color:green">Masa Finalisasi â€“ Penggalangan Dana Selesai</li>
+                                        <p>Pada tahap ini akan dilakukan penandatanganan dokumen-dokumen hukum berupa perjanjian kredit dan dokumen jaminan. Selanjutnya proses penggalangan dana anda telah rampung dan kami akan mengirimkan dana pendanaan ke rekening anda setelah dikurangi fee kami dan biaya administrasi terkait. <br> This stage will be the signing of legal documents in the form of credit agreements and collateral documents. Now, your CrowdFunding Project is finished and we will send the Fund to your account after deducting our fee and related administration fee.</p>
+                                    </ol>
+                                
+                                </div>
+                                    
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- end of modal penerima pembiayaan -->
+
+
+<!-- Featured properties start -->
+<div class="featured-properties content-area-2">
+    <div class="container  wow fadeInDown delay-04s">
+        
+        <!-- <ul class="list-inline-listing filters filteriz-navigation">
+            <li class="active btn filtr-button filtr" data-filter="all">All</li>
+            <li data-filter="1" class="btn btn-inline filtr-button filtr">Apartment</li>
+            <li data-filter="2" class="btn btn-inline filtr-button filtr">House</li>
+            <li data-filter="3" class="btn btn-inline filtr-button filtr">Office</li>
+        </ul> -->
+        <div class="row filter-portfolio">
+            <div class="cars">
+
+            @foreach ($proyek as $proyek)
+
+                <div class="col-lg-4 col-md-6 col-sm-12 filtr-item" data-category="3">
+                    <div class="property-box">
+<!--                        <div class="property-thumbnail">
+                            <a href="/proyek/{{$proyek->id}}" class="property-img" style="height:233px;">
+                                <div class="tag button alt featured">DETIL</div>
+                                <!-- <img src="img\projectpic350x233\{{$proyek->gambarProyek->first()['gambar']}}" alt="property-7" class="img-fluid"> -->
+<!--                                <img src="/storage/{{$proyek->gambar_utama}}" class="img-fluid">
+                            </a>
+                            <div class="property-overlay">
+                                <a href="/proyek/{{$proyek->id}}" class="overlay-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+
+                            </div>
+                        </div> -->
+                        <div class="property-thumbnail">
+                            <a href="/proyek/{{$proyek->id}}" class="property-img" style="height:200px;">
+                                <div class="tag button alt featured">DETIL</div>
+                                <!-- <img src="img\projectpic350x233\{{$proyek->gambarProyek->first()['gambar']}}" alt="property-7" class="img-fluid"> -->
+                                <img src="/storage/{{$proyek->gambar_utama}}" class="img-fluid">
+                               
+                            </a>
+                            <div class="property-overlay">
+                                <a href="/proyek/{{$proyek->id}}" class="overlay-link">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div class="text-right align-baseline">
+                                <h5 class="text-muted">{{$proyek->nama}}&nbsp;&nbsp;</h5>
+                            </div>
+                        </div>
+						<div class="detail">
+                                <button type="button" class="btn btn bg-css" style="padding:2px; margin: 0; float: right;">
+                                Sisa Hari <span class="badge badge-light badge-sm">{{ $proyek->tgl_mulai->diffInDays(Carbon\Carbon::now()->toDateString()) }}</span>
+                                <span class="sr-only">days left</span>
+                            </button>
+                            <!-- <button type="button" class="btn btn bg-css"  style="font-weight: bold; padding:2px; margin: 0; float: right;">
+                                Sisa Hari <span class="badge badge-light badge-sm">{{ $proyek->tgl_selesai->diffInDays(Carbon\Carbon::now()->toDateString()) }}</span>
+                                <span class="sr-only">days left</span>
+                            </button> -->
+                            <div class="location">
+                                <a href="https://www.google.com/maps/place/{{$proyek->alamat}}" target="_Blank">
+                                    <i class="flaticon flaticon-facebook-placeholder-for-locate-places-on-maps"></i>{{$proyek->alamat}}
+                                </a>
+                            </div>
+                            <hr>
+                            <table class="table table-borderless table-condensed" style="margin-bottom: .6em;">
+                                <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="progress" style="background-color: #aaf442; height: 30px;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-css" role="progressbar" style="font-weight: bold; font-size: 15px; width: {{number_format(($proyek->terkumpul/$proyek->total_need)*100, 2, '.', '')}}%;" aria-valuenow="{{number_format(($proyek->terkumpul/$proyek->total_need)*100, 2, '.', '')}}" aria-valuemin="0" aria-valuemax="100">
+                                                {{number_format(($proyek->terkumpul/$proyek->total_need)*100, 2, '.', '')}} %
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dana Dibutuhkan<br />
+                                        <span class="golden_text lead">Rp {{number_format($proyek->total_need,  0, '', '.')}}</span>
+                                    </td>
+                                    <td>Periode / Tenor<br />
+                                        <span class="golden_text lead">{{ $proyek->tgl_mulai->diffInMonths($proyek->tgl_selesai) }} Bulan</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Imbal Hasil/Tahun<br />
+                                        <span class="golden_text lead">{{$proyek->profit_margin}} %</span>
+                                    </td>
+                                    <td>Minimum investasi<br />
+                                        <span class="golden_text lead">Rp. {{number_format($proyek->harga_paket,  0, '', '.')}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Akad<br />
+                                        <span class="golden_text lead">{{$proyek->akad}}</span>
+                                    </td>
+                                    <td>Bayar Imbal Hasil<br />
+                                        <span class="golden_text lead">Bulanan</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+						<!--
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="#">{{$proyek->nama}}</a>
+                            </h1>
+                            <div class="location">
+                                <a href="detailProject.php">
+                                    <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>{{$proyek->alamat}}
+                                </a>
+                            </div>
+                            <table class="table table-striped">
+
+                                <tbody>
+                                <tr class="success">
+                                    <td><p>Dana Dibutuhkan</p></td>
+                                    <td><p>Rp {{number_format($proyek->total_need,  0, '', '.')}}</p></td>
+
+                                </tr>
+                                <tr >
+                                    <td><p>Periode / Tenor (bln)</p></td>
+                                    <td><p>12 Bulan</p></td>
+
+                                </tr>
+                                <tr class="success">
+                                    <td><p>Imbal Hasil Syariah</p> </td>
+                                    <td><p>{{$proyek->profit_margin}} %</p> </td>
+                                </tr>
+                                <tr>
+                                    <td><p>Minimum investasi</p> </td>
+                                    <td><p>Rp. {{number_format($proyek->harga_paket,  0, '', '.')}}</p> </td>
+                                </tr>
+                                <tr class="success">
+                                    <td><p>Jenis Akad</p> </td>
+                                    <td><p>{{$proyek->akad}}</p> </td>
+                                </tr>
+                                <tr>
+                                    <td><p>Pengembalian Pokok</p> </td>
+                                    <td><p>Bulanan</p></td>
+
+                                </tr>
+                                <tr class="success">
+                                    <td><p>Total Terkumpul</p> </td>
+                                    <td><p>{{number_format(($proyek->terkumpul/$proyek->total_need)*100, 2, '.', '')}} %</p> </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer">
+                            <ul>
+                                <li><h6>Sampai waktu</h6></li>
+                                <li><h6 class="text-right text-nowrap">{{$proyek->tgl_mulai->toDateString()}}</h6></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured properties end -->
+@endsection

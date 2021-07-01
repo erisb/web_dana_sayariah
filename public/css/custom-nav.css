@@ -1,0 +1,47 @@
+.custom-nav{
+    background: white;
+}
+.custom-nav ul li a {
+    color: black !important;
+}
+
+.panel-nav-paginate{
+    margin-left:44%;
+    margin-right:44%;
+}
+
+
+
+  /* pagination */
+
+.pagination > .page-item > .page-link {
+    background: white;
+    color: #02775B;
+    border-color: #02775B;
+}
+.pagination > .page-item > .page-link:hover {
+    background: #02775B;
+    color: white;
+    border-color: #02775B;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: white;
+    background-color: #02775B;
+}
+
+.page-item.disabled .page-link {
+ 
+    color: #868e96;
+   
+    pointer-events: none;
+   
+    cursor: auto;
+   
+    background-color: rgb(202, 202, 202);
+   
+    border-color: #718393;
+    opacity: 0.4;
+   
+  }

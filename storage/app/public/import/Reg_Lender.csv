@@ -1,0 +1,68 @@
+Registrasi Lender||||||||||||||||||||||||||||
+id_penyelenggara|id_lender|kode_pengguna|jenis_pengguna|nama_lender|no_ktp|no_npwp|id_jenis_badan_hukum|id_negara_domisili|tempat_lahir|tgl_lahir|id_jenis_kelamin|alamat|id_kota |id_provinsi|kode_pos|id_agama|id_status_perkawinan|id_pekerjaan|id_bidang_pekerjaan|pendapatan|pengalaman_kerja|id_pendidikan|id_kewarganegaraan|sumber_dana|nama_perwakilan|no_ktp_perwakilan||
+INT|STRING|ENUM|ENUM|STRING (150)|STRING (16)|STRING (15)|ENUM|ENUM|STRING|DATE|ENUM|STRING (100)|ENUM|ENUM|STRING (5)|ENUM|ENUM|ENUM|ENUM|ENUM|ENUM|ENUM|ENUM|STRING (50)|STRING (150)|STRING (16)||
+810059|269|1|1|Drs Agus Anwar|3173071211560004|0||0|31|1956-11-12|1|\N||31||1||||7|||1|||||
+810059|105|1|1|M Zaidan Fikri|1207232711670002|0||0|12|1967-11-27|1|Jl. Tanjung Balai Perumahan Payasari Permai No. 49 PayageliMedan 20352||12||1||||7|||1|||||
+810059|642|1|1|Sugeng nugroho|3276100905740000|||0|32|1974-05-09|1|Bumi Kemang Indah 3 No. 1 Jl Masjid Nurul Falah RT 01/06 Sukatani Tapos Depok||32||1||||7|||1|||||
+810059|620|1|1|Mulyady, Spd|3175060909750020|496685736006000||0|31|1975-09-09|1|Karyawan swasta||31||1||||7|||1|||||
+810059|331|1|1|Trisnadi Yulrisman|3276042607660005|0||0|32|1966-07-26|1|karyawan||32||1||||7|||1|||||
+810059|831|1|1|Anisa Yulia Sarma|3174095707800010|585719859017000||0|31|1980-07-57|2|Komplek Indah Minimalis Kav IV Jl. Kemenyan Indah RT 007 RW 05 Ciganjur Jagakarsa Jakarta Selatan||31||1||||7|||1|||||
+810059|798|1|1|ANDI MUJAHIDIN|3175101907630002|477640353701000||0|31|1963-07-19|1|Jl. Cengkeh RT 05/RW 02 No. 72 Kel. Lubang Buaya, Cipayung, Jakarta Timur||31||1||||7|||1|||||
+810059|249|1|1|NurAsiah|3175064403640001|0||0|31|1964-03-44|2|\N||31||1||||7|||1|||||
+810059|282|1|1|Agung Nugroho|3273221601700001|496672254424000||0|32|1970-01-16|1|Ibu rumah tangga||32||1||||7|||1|||||
+810059|77|1|1|Adji|3174101610820009|||0|31|1982-10-16|1|Swasta||31||1||||7|||1|||||
+810059|446|1|1|Eko Widjayanto|3175011311660002|075401752001000||0|31|1966-11-13|1|Wiraswasta||31||1||||7|||1|||||
+810059|819|1|1|Mochamad Ibnu Lukman|3215250305910003|984576785433000||0|32|1991-05-03|1|Pondok Rawamas Indah E2/12 Cikampek, Karawang, Jawa Barat||32||1||||7|||1|||||
+810059|614|1|1|nurliza|1106084201800000|1||0|11|1980-01-42|2|Sindang Galih rt/rw 003/002, gunung gede, Kawalu, Tasik malaya||11||1||||7|||1|||||
+810059|489|1|1|Djulaiha Sukmana|3273187006720001|1||0|32|1972-06-70|2|jl senam i no 8, arcamanik, Bandung||32||1||||7|||1|||||
+810059|636|1|1|Sunarto|3275032008690032|||0|32|1969-08-20|1|Kp.Rawa Bugel Rt.004-Rw.004 no.9 - Harapan Jaya - Bekasi Utara||32||1||||7|||1|||||
+810059|403|1|1|Perdana Putra|3175081710810015|0||0|31|1981-10-17|1|Jl. Pusdiklat Depnaker No. 99||31||1||||7|||1|||||
+810059|626|1|1|Lusy shintya devi|3275105003930000|||0|32|1993-03-50|2|pelajar||32||1||||7|||1|||||
+810059|754|1|1|YUDIANTO|3276010104640003|||0|32|1964-04-01|1|DEPOK||32||1||||7|||1|||||
+810059|450|1|1|BAKTI ARDHI|3673010102830005|0||0|36|1983-02-01|1|JL. Kejaksaan no 16 Pangkalpinang||36||1||||7|||1|||||
+810059|578|1|1|Jamil Munawir|3202352807940000|||0|32|1994-07-28|1|1||32||1||||7|||1|||||
+810059|390|1|1|Nawang Iswandanni|3276094806880002|0||0|32|1988-06-48|2|Jalan Jati Mulya No. 72 Rt/Rw. 003/006 Pangkalan Jati, Cinere, Depok 16513||32||1||||7|||1|||||
+810059|230|1|1|Antono Im Muhammad|3175071804850015|345120216008000||0|31|1985-04-18|1|Duren Sawit Indah AIX/13, Kel. Klender, Kec. Duren Sawit, Jakarta Timur||31||1||||7|||1|||||
+810059|757|1|1|M FIRDAUS FEBRIAN GHIFARIAWAN|3604050102980005|||0|36|1998-02-01|1|KOMP GSI BLOK P6 Desa MARGATANI Kecamatan KRAMATWATU Kabupaten Serang, Banten||36||1||||7|||1|||||
+810059|719|1|1|Panji kurnia rahman|3175011410900005|||0|31|1990-10-14|1|Jl matraman salemba 1/14||31||1||||7|||1|||||
+810059|796|1|1|Muhammad Arief Basyarahil|3276052304950008|||0|32|1995-04-23|1|Perumahan Griya Tugu Asri Blok A3 no9, tugu, cimanggis, depok||32||1||||7|||1|||||
+810059|527|1|1|markuat sudjai|6472060405550001|0||0|64|1955-05-04|1|\N||64||1||||7|||1|||||
+810059|850|1|1|Edwam Akbar|1306061304840004|779192723202000||0|13|1984-04-13|1|Batui, Jorong Sungai Tanang Gadang, Nagari Sungai Tanang, Kec. Banuhampu, Kab. Agam, SUMBAR 26181||13||1||||7|||1|||||
+810059|443|1|1|wina yushesa|6303054210710004|||0|63|1971-10-42|2|KOmp Duta Permai Sungai Sipai Martapura Kal Sel||63||1||||7|||1|||||
+810059|365|1|1|Pradhito Januadhistianto|3374100901830002|0||0|33|1983-01-09|1|\N||33||1||||7|||1|||||
+810059|261|1|1|M. Ashuri|1901051503690002|0||0|19|1969-03-15|1|Gg Lemba Wai, RT/RW 012/000, Kel. Air Duren, Pemali, Bangka, Bangka Belitung||19||1||||7|||1|||||
+810059|194|1|1|lili retnosari|3301054801940001|0||0|33|1994-01-48|1|Jl.trans kalimantan km 98 antaren 1, kec.kahayan hilir kab. pulang pisau kalimantan tengah||33||1||||7|||1|||||
+810059|125|1|1|Surya Adi Saputro|3674032512860005|0||0|36|1986-12-25|1|Bojong Timur RT 01 RW 08, Jurangombo Selatan, Magelang||36||1||||7|||1|||||
+810059|169|1|1|Andi auliya rachman|3522061801940004|0||0|35|1994-01-18|1|Jl.?Mahoni? selatan? 5?no?5 perumnas mojoranu||35||1||||7|||1|||||
+810059|858|1|1|Muh. Ulin Nuha Fajrin|3505110609860001|764697944653000||0|35|1986-09-06|1|Manukan RT 02 RW 01 Pojok Garum Blitar||35||1||||7|||1|||||
+810059|646|1|1|Wahyu Hidayat|3175082805860000|||0|31|1986-05-28|1|jalan rajawali raya, SLTP 214 Rt.03/011, Halim P.K, Makasar, Jakarta Timur||31||1||||7|||1|||||
+810059|381|1|1|zico alaia akbar junior|3201011505880005|0||0|32|1988-05-15|1|Pura bojong gede blok l7 no 10||32||1||||7|||1|||||
+810059|228|1|1|ABD WAHID GHAFUR|3528042512890002|0||0|35|1989-12-25|1|Jl. Dirgahayu Gg I Bugih Pamekasan||35||1||||7|||1|||||
+810059|164|1|1|T. M. CHAIRIL IMAM|1272021208960003|0||0|12|1996-08-12|1|Karyawan swasta||12||1||||7|||1|||||
+810059|256|1|1|Salman Alfarisy|3275030609900010|0||0|32|1990-09-06|1|Perumahan Tytyan Kencana Blok E2 No 21, RT 001 RW 006, Bekasi Utara||32||1||||7|||1|||||
+810059|713|1|1|Bimly Akbar Shafara|3510132007950003|756618914423000||0|35|1995-07-20|1|Jalan Dago Pojok No. 27E Kec. Coblong Kota Bandung 40135||35||1||||7|||1|||||
+810059|542|1|1|Jaka Akbar Didasona ST|3275020312840009|462668708407000||0|32|1984-12-03|1|Jl. P. Buton VIII No.175, RT 05, RW 17, Aren Jaya, Bekasi Timur, Kota Bekasi, Jawa Barat||32||1||||7|||1|||||
+810059|759|1|1|ADINOVA FAURI|3175041211930002|752980714005000||0|31|1993-11-12|1|Jalan Jaani Nasir No 51 RT 001 RW 010 Cawang, Jakarta, 13630||31||1||||7|||1|||||
+810059|121|1|1|Ahmad Rozali|3203010111830015|690702493423000||0|32|1983-11-01|1|Perum prima anggrek blok c13 kd.dampit rancagoong cilaku cianjur||32||1||||7|||1|||||
+810059|201|1|1|Bagus supriadi kurniawan|3515012711730001|0||0|35|1973-11-27|1|Clangab rw08/rt03 desa tarik kecamatan tarik sidoarjo jawatimur||35||1||||7|||1|||||
+810059|524|1|1|Anissa Restuti Amalia|3326076809940001|0||0|33|1994-09-68|2|Dk Mlaten 2, Karangsari RT 1 RW 4 Karanganyar Pekalongan||33||1||||7|||1|||||
+810059|747|1|1|Oon Rohanah|3575024203660001|483424651625000||0|35|1966-03-42|2|PLN||35||1||||7|||1|||||
+810059|625|1|1|Wina Yunita|3206026003850000|1||0|32|1985-03-60|2|Karyawan BUMN||32||1||||7|||1|||||
+810059|847|1|1|saldy achmad yanuar|3173041912890001|||0|31|1989-12-19|1|jl wijaya II, grand wijaya center blok d3  kebayoran baru jakarta selatan||31||1||||7|||1|||||
+810059|190|1|1|Muhammad Avisena|3515181910960005|0||0|35|1996-10-19|1|Apt parkview jl margonda raya no 1, beji, depok, jabar||35||1||||7|||1|||||
+810059|195|1|1|Syauqy Lukman|3273021101790009|0||0|32|1979-01-11|1|Jl. Kidang Pananjung 8 Bandung||32||1||||7|||1|||||
+810059|648|1|1|Dewi Heryani|1271176909750000|||0|12|1975-09-69|2|Ibu Tumah tangga||12||1||||7|||1|||||
+810059|577|1|1|Dedi Gusnadi|1271113108690003|74547506113000||0|12|1969-08-31|1|Jl. Pintu Air IV No. 277-B Medan||12||1||||7|||1|||||
+810059|632|1|1|Ferry Chomsa R Budi|3173052502710003|1||0|31|1971-02-25|1|Swasta||31||1||||7|||1|||||
+810059|683|1|1|FANDY DIAN PRAMANA|3174032010810000|570640946014000||0|31|1981-10-20|1|PERUMAHAN BALI CENI NO.C13 TANAH BARU,BEJI,DEPOK||31||1||||7|||1|||||
+810059|499|1|1|alfa rega montana|3201312104830007|0||0|32|1983-04-21|1|\N||32||1||||7|||1|||||
+810059|664|1|1|Dwitiya Kartika Batubara|3175044102830010|||0|31|1983-02-41|2|Swasta||31||1||||7|||1|||||
+810059|162|1|1|Novan Akmalazaki Ilham|3323031411980001|0||0|33|1998-11-14|1|Jl. MT. Haryono, Lingk. Sumodipuran 177A, Temanggung 56213||33||1||||7|||1|||||
+810059|406|1|1|nandar|3674022106790003|0||0|36|1979-06-21|1|kp. dongkal rt01 rw 05, kel.pondok jagung timur, kec.serpong utara, kota Tangerang selatan, Banten||36||1||||7|||1|||||
+810059|358|1|1|Raden Muhammad Usman|3175081107610002|242960904005000||0|31|1961-07-11|1|Cipinang Asem No.71 Rt.008/Rw.09, Kel. Kebon Pala, Kec. Makasar, Jakarta Timur 13650||31||1||||7|||1|||||
+810059|639|1|1|Dita kurnia sanie|3275024111810020|357449008407000||0|32|1981-11-41|2|Dokter||32||1||||7|||1|||||
+810059|643|1|1|budiman|3216151804700000|||0|32|1970-04-18|1|kp. srengseng jaya, sukadarma, sukatani, bekasi||32||1||||7|||1|||||
+810059|652|1|1|Muyasir Tanjung|8204062804950000|||0|82|1995-04-28|1|Kp. Sukaharja Rt/Rw 002/015 Kel. Manggungharja Ciparay Kab. Bandung Jawa Barat||82||1||||7|||1|||||
+810059|604|1|1|Andri Fauzan Adziima|3522251205950000|839781077601000||0|35|1995-05-12|1|Jl. Serma Kusman No.1c Banjarjo Bojonegoro Jawa Timur 62118||35||1||||7|||1|||||
+810059|598|1|1|titiez arga|3322042402850000|707972295505000||0|33|1985-02-24|1|sarijadi, blok 17 no 73, bandung||33||1||||7|||1|||||
+810059|537|1|1|Zaenal Arifin|3174051001760003|||0|31|1976-01-10|1|Jl. Kompl. Hankam No. 2RT 004/011, Keb. Lama, Jaksel, 12220||31||1||||7|||1|||||

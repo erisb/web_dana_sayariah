@@ -1,0 +1,6 @@
+||ID_penyelenggara|Nama|No KTP|Jabatan|Masa Jabatan|NPWP/TIN|Jumlah Nilai Saham|Jumlah Lembar Saham|Presentase Nilai Saham|
+||INTEGER|STRING (150)|STRING (16)|STRING (60)|STRING (60)|STRING (15)|MONETARY/NUMERIC|INTEGER|INTEGER|BLOOB
+1||810059|Taufiq Aljufri|3274011903660003|Founder dan CEO|Awal Berdiri - Sekarang|71.695.197.5-017.000|1000000000|1000|40|
+2||810059|Merry Yuniarni|3201024906720007|-|Awal Berdiri - Sekarang|24.911.686.4-412.000|750000000|750|30%|
+3||810059|Arie Rizal Lesmana|'3276090805750000|Komisaris|Awal Berdiri - Sekarang|24.911.686.4-412.000|750000000|750|30%|
+4||810059|Atis Sutisna|3273180304680002|Direktur|Juni-2018 - Sekarang|24.911.686.4-412.000|0|0|0%|

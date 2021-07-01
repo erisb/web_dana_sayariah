@@ -1,0 +1,3 @@
+|id_penyelenggara|nama_penyelenggara|layanan_pinjaman|jumlah_tenaga_kerja_pria|jumlah_tenaga_kerja_wanita|jumlah_kantor_cabang
+|INTEGER|STRING (150)|ENUMERATION|INTEGER |INTEGER|INTEGER
+|810059|https://danasyariah.id https://www.danasyariah.id|2|6|6|0
